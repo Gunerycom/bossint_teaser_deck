@@ -886,63 +886,109 @@ body {
 }
 
 /* =========================================================
-   PAGE 6: TRACTION & DEFESIBILITY
+   PAGE 6: DOMAIN AGENT CASE STUDIES
    ========================================================= */
-.traction-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-top: 38px;
+.page-cases {
+  min-height: 100vh;
+  padding: 84px 28px 48px;
 }
 
-.traction-card {
-  display: flex;
-  gap: 18px;
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.case-card {
   background: var(--surface-card);
   border: 1px solid var(--border);
   border-radius: var(--r-md);
-  padding: 24px;
-  transition: all 0.3s;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
 }
 
-.traction-card:hover {
+.case-card:hover {
   border-color: var(--cobalt);
   box-shadow: var(--shadow-h);
   transform: translateY(-2px);
 }
 
-.traction-icon {
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
+.case-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.case-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
   border-radius: var(--r-sm);
-  background: var(--cobalt-l);
-  color: var(--cobalt);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.traction-content h3 {
-  font-size: 1.05rem;
+.case-icon.icon-rose { background: var(--rose-l); color: var(--rose); }
+.case-icon.icon-amber { background: var(--amber-l); color: var(--amber); }
+.case-icon.icon-emerald { background: var(--emerald-l); color: var(--emerald); }
+.case-icon.icon-cobalt { background: var(--cobalt-l); color: var(--cobalt); }
+.case-icon.icon-cyan { background: rgba(6, 182, 212, 0.12); color: #06B6D4; }
+.case-icon.icon-purple { background: rgba(168, 85, 247, 0.12); color: #A855F7; }
+
+.case-domain-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.tag-rose { color: var(--rose); }
+.tag-amber { color: var(--amber); }
+.tag-emerald { color: var(--emerald); }
+.tag-cobalt { color: var(--cobalt); }
+.tag-cyan { color: #06B6D4; }
+.tag-purple { color: #A855F7; }
+
+.case-card-body h3 {
+  font-size: 0.98rem;
   font-weight: 700;
   margin-bottom: 6px;
   color: var(--text);
+  line-height: 1.3;
 }
 
-.traction-content p {
-  font-size: 0.86rem;
+.case-card-body p {
+  font-size: 0.82rem;
   color: var(--text-muted);
-  line-height: 1.5;
+  line-height: 1.45;
+  margin-bottom: 10px;
 }
 
-.traction-metric-tag {
+.case-card-footer {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-s);
+  display: flex;
+  align-items: center;
+}
+
+.case-metric-pill {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--amber);
-  margin-top: 8px;
-  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.case-card:hover .case-metric-pill {
+  color: var(--cobalt);
 }
 
 /* =========================================================
@@ -1100,7 +1146,8 @@ body {
   .problem-grid-3,
   .swarm-diagram,
   .swarm-pillars,
-  .traction-grid {
+  .traction-grid,
+  .cases-grid {
     grid-template-columns: 1fr;
   }
   
