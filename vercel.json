@@ -8,6 +8,10 @@
     { "source": "/es", "destination": "/es.html" },
     { "source": "/index-es", "destination": "/index-es.html" },
     { "source": "/teaser-04-es", "destination": "/teaser-04-es.html" },
-    { "source": "/teaser-es", "destination": "/teaser-es.html" }
+    { "source": "/teaser-es", "destination": "/teaser-es.html" },
+    { "source": "/tr", "destination": "/tr.html" },
+    { "source": "/index-tr", "destination": "/index-tr.html" },
+    { "source": "/teaser-04-tr", "destination": "/teaser-04-tr.html" },
+    { "source": "/teaser-tr", "destination": "/teaser-tr.html" }
   ]
 }

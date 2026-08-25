@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bossint AI — Kurumsal Seviye Otonom Yapay Zeka Ajan İstihbaratı</title>
+  <meta name="description" content="Tüm webi 7/24 otonom olarak izleyen, kaynak doğrulamalı yapılandırılmış iş istihbaratı, tahmin ve kararlar sunan yapay zeka ajan sürüleri.">
+  <link rel="stylesheet" href="teaser-04.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="#p-cover" class="topbar-logo-link hide-on-cover" aria-label="Bossint AI Ana Sayfa">
+        <img src="BOSSINT-NEW-LOGO.svg" alt="Bossint AI" class="topbar-logo">
+      </a>
+    </div>
+
+    <div class="topbar-actions">
+      <span class="topbar-page-indicator" id="page-indicator">01 / 07</span>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Temayı değiştir">
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg id="icon-moon" style="display:none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- DOT NAVIGATION -->
+  <nav class="dot-nav" aria-label="Sayfa navigasyonu">
+    <button class="dot-nav-item active" data-label="01 // Değer Önerisi"></button>
+    <button class="dot-nav-item" data-label="02 // Pazar"></button>
+    <button class="dot-nav-item" data-label="03 // Problem"></button>
+    <button class="dot-nav-item" data-label="04 // Mimari"></button>
+    <button class="dot-nav-item" data-label="05 // 120sn Süreç"></button>
+    <button class="dot-nav-item" data-label="06 // Vaka Analizleri"></button>
+    <button class="dot-nav-item" data-label="07 // Canlı Demo"></button>
+  </nav>
+
+
+  <!-- ================================================
+       SLIDE 1 — THE HOOK & VALUE PROP
+       ================================================ -->
+  <section class="page page-hero" id="p-cover">
+    <div class="bg-grid"></div>
+    <div class="bg-ambient-glow glow-cobalt"></div>
+
+    <div class="page-inner hero-wrapper">
+      <div class="hero-logo-wrap reveal">
+        <img src="BOSSINT-NEW-LOGO.svg" alt="Bossint AI" class="hero-logo">
+      </div>
+
+      <h1 class="hero-title reveal reveal-delay-1">
+        Kurumsal Seviye<br>
+        <span class="grad-blue">Yapay Zeka Ajan İstihbaratı</span>
+      </h1>
+
+      <div class="t2-card hero-sub-box reveal reveal-delay-2">
+        <p class="hero-sub-lead">
+          Tüm webi 7/24 izleyen, profesyoneller için tahminler ve kararlarla birlikte yapılandırılmış, kaynak doğrulamalı iş istihbaratı sunan otonom yapay zeka ajan sürüleri.
+        </p>
+      </div>
+
+      <div class="hero-signals reveal reveal-delay-3">
+        <div class="hero-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          Hedef Tanımından Sürüye &lt; 120 sn
+        </div>
+        <div class="hero-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          %100 Kaynak Bağlantılı URL'ler (Sıfır Halüsinasyon)
+        </div>
+        <div class="hero-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          REST + MCP Entegrasyonuna Hazır
+        </div>
+      </div>
+    </div>
+
+    <a href="#p-market" class="scroll-hint-bar" aria-label="Sonraki bölüm">
+      <span>Pazardaki Dönüşüm</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+    </a>
+  </section>
+
+
+  <!-- ================================================
+       SLIDE 2 — THE MACRO WAVE & ASYMMETRY
+       ================================================ -->
+  <section class="page" id="p-market">
+    <div class="bg-grid"></div>
+    <div class="page-inner">
+      <div class="tag-telemetry reveal">
+        <span class="pulse-dot"></span>
+        <span>PAZARDA PARADİGMA DEĞİŞİMİ</span>
+      </div>
+      <h2 class="headline reveal reveal-delay-1">
+        "Chatbot'a Komut Vermekten"<br>
+        <span class="grad-blue">Sürekli Otonom İzlemeye</span>
+      </h2>
+
+      <div class="market-grid reveal reveal-delay-2">
+        <!-- Left: TAM Surge -->
+        <div class="tam-container">
+          <div class="stat-box">
+            <span class="stat-num">$7.6B</span>
+            <span class="stat-title">2025 Küresel Yapay Zeka Ajanları Pazarı</span>
+          </div>
+
+          <div class="cagr-badge-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            <span>+%49.6 Yıllık Bileşik Büyüme Oranı</span>
+          </div>
+
+          <div class="stat-box featured">
+            <span class="stat-num grad-blue">$183B</span>
+            <span class="stat-title">2033 Pazar Projeksiyonu</span>
+          </div>
+
+          <a href="https://www.grandviewresearch.com/industry-analysis/ai-agents-market-report" target="_blank" rel="noopener" class="stat-source-link">
+            Kaynak: Grand View Research ↗
+          </a>
+        </div>
+
+        <!-- Right: The 52% Insight Card -->
+        <div class="t2-card insight-card">
+          <div>
+            <div class="insight-top">
+              <span class="insight-source">Google Cloud Yönetici Araştırması</span>
+              <span class="mono" style="font-size:0.75rem; color:var(--emerald);">AKTİF ADAPTASYON</span>
+            </div>
+            
+            <div class="insight-metric-hero">%52</div>
+            <h3 class="insight-heading">kurumların %52'si yapay zeka ajanlarını halihazırda canlı üretime aldı.</h3>
+          </div>
+
+          <div class="thesis-callout">
+            <strong>Fırsat Penceresi:</strong> Çoğu ekip yalnızca manuel komut bekleyen reaktif botlar kuruyor. Bossint en yüksek marjlı katmanı yakalar: <strong>7/24 otonom çevresel farkındalık ve izleme.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SLIDE 3 — THE PROBLEM: AI SLOP & CHAOTIC NOISE
+       ================================================ -->
+  <section class="page" id="p-paradigm">
+    <div class="bg-grid"></div>
+    <div class="page-inner">
+      <div class="tag-telemetry reveal">
+        <span class="pulse-dot"></span>
+        <span>PROBLEM</span>
+      </div>
+      <h2 class="headline reveal reveal-delay-1">
+        Yapay zeka kirliliği ve sonsuz web verisi çağında,<br>
+        gerçekten önemli olan istihbarata ulaşmak tam bir karmaşa
+      </h2>
+
+      <div class="problem-grid-3 stagger-children">
+        <!-- Card 1: AI Slop & Web Chaos -->
+        <div class="t2-card failure-card">
+          <div class="failure-card-body">
+            <h3>Yapay Zeka Kirliliği ve Web Kaosu</h3>
+            <p>Web ortamı gürültü, halüsinasyonlar ve doğrulanmamış özetlerle dolu; bu da güvenilir istihbarata ulaşmayı zorlaştırıyor.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Prompt-Based Chatbots -->
+        <div class="t2-card failure-card">
+          <div class="failure-card-body">
+            <h3>Komut Odaklı Chatbotlar</h3>
+            <p>Soruları yanıtlayabilir ve bazı görevleri otomatikleştirebilirler, ancak sürekli kurumsal istihbarat için tasarlanmamışlardır.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Endless Data Dump -->
+        <div class="t2-card failure-card">
+          <div class="failure-card-body">
+            <h3>SONSUZ VERİ YIĞINI</h3>
+            <p>Günümüzün ajanları ekipleri ham veri yığınlarına boğar; daha iyi kararlar aldırmak yerine onları gürültü içinde kaybettirir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SLIDE 4 — THE AGENT SWARM ARCHITECTURE
+       ================================================ -->
+  <section class="page" id="p-architecture">
+    <div class="bg-grid"></div>
+    <div class="bg-ambient-glow glow-cobalt"></div>
+
+    <div class="page-inner">
+      <div class="tag-telemetry reveal">
+        <span class="pulse-dot"></span>
+        <span>Bu problemi nasıl çözüyoruz?</span>
+      </div>
+      <h2 class="headline reveal reveal-delay-1">
+        Ajan Sürüsü Mimarisi
+      </h2>
+
+      <!-- Swarm 3-tier node flow -->
+      <div class="swarm-diagram reveal reveal-delay-2">
+        <div class="swarm-node">
+          <div class="node-icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h4>Çok Dilli Ajan Gözlemcileri</h4>
+          <p>Ajanlar küresel webi her dilde izleyerek derinlemesine ve aksiyona dönüştürülebilir istihbarat sunar.</p>
+        </div>
+
+        <div class="swarm-node center-brain">
+          <div class="node-icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          </div>
+          <h4>Ajan Konsensüsü ve Doğrulama</h4>
+          <p>Gözlemci girdilerini çapraz doğrular, sentetik kirliliği eler, anlık veri farklarını hesaplar ve stratejik çıkarımları sentezler.</p>
+        </div>
+
+        <div class="swarm-node">
+          <div class="node-icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <h4>Yapılandırılmış Veri ve MCP</h4>
+          <p>Temiz JSON şemaları, REST uç noktaları ve ajanlar arası canlı MCP bağlamını doğrudan altyapınıza aktarır.</p>
+        </div>
+      </div>
+
+      <!-- Core Defensibility Pillars -->
+      <div class="swarm-pillars reveal reveal-delay-3">
+        <div class="pillar-item">
+          <span class="pillar-dot"></span>
+          <div>
+            <strong>%100 Otonom</strong>
+            <span>Sıfır manuel müdahale ile belirlenen periyotta 7/24 kesintisiz çalışır.</span>
+          </div>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-dot" style="background:var(--amber); box-shadow:0 0 6px var(--amber);"></span>
+          <div>
+            <strong>Kaynak Bağlantılı Kanıt</strong>
+            <span>Her iddia ve çıkarılan veriyi destekleyen doğrudan, değiştirilemez URL'ler.</span>
+          </div>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-dot" style="background:var(--emerald); box-shadow:0 0 6px var(--emerald);"></span>
+          <div>
+            <strong>Yapılandırılmış Veri Çıkarımı</strong>
+            <span>Dağınık web sayfalarını kesin ve tip tanımlı veritabanı kayıtlarına dönüştürür.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SLIDE 5 — 120-SECOND GOAL-TO-AGENT PIPELINE
+       ================================================ -->
+  <section class="page" id="p-pipeline">
+    <div class="bg-grid"></div>
+    <div class="page-inner">
+      <div class="tag-telemetry reveal">
+        <span class="pulse-dot"></span>
+        <span>SÜRTÜNMESİZ BAŞLANGIÇ</span>
+      </div>
+      <h2 class="headline reveal reveal-delay-1">
+        Hedef Tanımından Otonom Sürüye <span class="grad-blue">&lt; 120 Saniyede</span>
+      </h2>
+
+      <div class="pipeline-flow reveal reveal-delay-2">
+        <div class="pipeline-step">
+          <span class="pipeline-step-num">ADIM 01</span>
+          <h3>Hedefinizi Belirtin</h3>
+          <p>Doğal dille girdi: "AB batarya patent başvurularını ve ilk 5 rakibin fiyat değişimlerini izle." Kod gerekmez.</p>
+        </div>
+
+        <div class="pipeline-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </div>
+
+        <div class="pipeline-step">
+          <span class="pipeline-step-num">ADIM 02</span>
+          <h3>Sürü Yapılandırılır</h3>
+          <p>Bossint özel ajan rollerini derler, kaynak mimarilerini haritalar, delta filtrelerini kurar ve otonom olarak devreye girer.</p>
+        </div>
+
+        <div class="pipeline-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </div>
+
+        <div class="pipeline-step step-final">
+          <span class="pipeline-step-num">ADIM 03</span>
+          <h3>İstihbarat Akışı Başlar</h3>
+          <p>Sürekli yapılandırılmış uyarılar, doğrulanmış kaynak bağlantıları ve yönetici özetleri API, MCP veya arayüz ile iletilir.</p>
+        </div>
+      </div>
+
+      <div class="pipeline-footer-banner reveal reveal-delay-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span>Bakım gerektiren kazıyıcılar yok. Prompt mühendisliği yok. Saf otonom istihbarat.</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SLIDE 6 — DOMAIN AGENT CASE STUDIES
+       ================================================ -->
+  <section class="page page-cases" id="p-traction">
+    <div class="bg-grid"></div>
+    <div class="page-inner">
+      <div class="tag-telemetry reveal">
+        <span class="pulse-dot"></span>
+        <span>KANITLANMIŞ SEKTÖREL AJANLAR</span>
+      </div>
+      <h2 class="headline reveal reveal-delay-1">
+        Sahada Test Edilmiş Vaka Analizleri<br>
+        <span class="grad-blue">Otonom Sürüler Görev Başında</span>
+      </h2>
+
+      <div class="cases-grid stagger-children">
+        <!-- 1. Medical & Pharma -->
+        <div class="case-card">
+          <div class="case-card-header">
+            <div class="case-icon icon-rose">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <span class="case-domain-tag tag-rose">// MEDİKAL VE İLAÇ</span>
+          </div>
+          <div class="case-card-body">
+            <h3>Klinik Deney ve İlaç Gelişimi Takip Sürüsü</h3>
+            <p>Rakip ilaç faz geçişlerini ve patent bitişlerini tespit etmek için küresel kayıtları (FDA, EMA, NMPA), tıbbi makaleleri ve hastane kayıtlarını tarar.</p>
+          </div>
+          <div class="case-card-footer">
+            <span class="case-metric-pill">%99.8 Çıkarım Doğruluğu</span>
+          </div>
+        </div>
+
+        <!-- 2. Defense & Global Procurement -->
+        <div class="case-card">
+          <div class="case-card-header">
+            <div class="case-icon icon-amber">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <span class="case-domain-tag tag-amber">// SAVUNMA VE KAMU İHALELERİ</span>
+          </div>
+          <div class="case-card-body">
+            <h3>Küresel İhale Takipçisi ve Sözleşme Tahmincisi</h3>
+            <p>80'den fazla ülkede kamu ihalelerini, alıcı niyet sinyallerini ve şartname sızıntılarını araştırır. İhale sonuçlarını tahmin eder ve katılım kararları üretir.</p>
+          </div>
+          <div class="case-card-footer">
+            <span class="case-metric-pill">Şartname Radarı ve Kazanma Tahminleri</span>
+          </div>
+        </div>
+
+        <!-- 3. Finance & Capital Markets -->
+        <div class="case-card">
+          <div class="case-card-header">
+            <div class="case-icon icon-emerald">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            </div>
+            <span class="case-domain-tag tag-emerald">// FİNANS VE PİYASALAR</span>
+          </div>
+          <div class="case-card-body">
+            <h3>SEC ve Arbitraj Fırsatı Gözlemcisi</h3>
+            <p>Bilanço açıklamaları öncesinde alfa üretmek için SEC 8-K bildirimlerini, tedarik zinciri fiyat değişimlerini, yönetim kurulu hareketlerini ve opsiyon oynaklığını sürekli izler.</p>
+          </div>
+          <div class="case-card-footer">
+            <span class="case-metric-pill">Saniye Altı JSON Veri Akışı</span>
+          </div>
+        </div>
+
+        <!-- 4. Investment & VCs -->
+        <div class="case-card">
+          <div class="case-card-header">
+            <div class="case-icon icon-cobalt">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <span class="case-domain-tag tag-cobalt">// YATIRIM VE VENTURE CAPITAL</span>
+            <a href="https://agents.bossint.ai/vc" target="_blank" rel="noopener" class="case-live-tag" title="Canlı VC ajanlarını açın">
+              <span class="pulse-emerald-sm"></span> Canlı İzleyin ↗
+            </a>
+          </div>
+          <div class="case-card-body">
+            <h3>Yatırım ve Girişim Sermayesi İstihbarat Merkezi</h3>
+            <ul class="case-agent-list">
+              <li><span class="case-agent-bullet">›</span> <span><strong>ABD Yapay Zeka Yatırımları (24s):</strong> 24 saatlik ABD yapay zeka yatırım turlarına dair günlük brifingler.</span></li>
+              <li><span class="case-agent-bullet">›</span> <span><strong>Haftalık Yapay Zeka Raporu:</strong> ABD yapay zeka ekosistemi yatırım analizleri.</span></li>
+              <li><span class="case-agent-bullet">›</span> <span><strong>MENA Yatırım Radarı:</strong> Orta Doğu ve Kuzey Afrika girişim sermayesi anlaşmalarının haftalık takibi.</span></li>
+              <li><span class="case-agent-bullet">›</span> <span><strong>Top 10 Girişim Sermayesi Lideri:</strong> Silikon Vadisi'nin önde gelen yatırımcılarının stratejik takibi.</span></li>
+            </ul>
+          </div>
+          <div class="case-card-footer">
+            <a href="https://agents.bossint.ai/vc" target="_blank" rel="noopener" class="case-link-pill">
+              <span>agents.bossint.ai/vc ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. News & Digital Media -->
+        <div class="case-card">
+          <div class="case-card-header">
+            <div class="case-icon icon-cyan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+            </div>
+            <span class="case-domain-tag tag-cyan">// HABER VE DİJİTAL MEDYA</span>
+          </div>
+          <div class="case-card-body">
+            <h3>Gündem Kırılımları ve Bilgi Kirliliği Filtresi</h3>
+            <p>Milyonlarca küresel haberi gerçek zamanlı filtreler, yapay zeka kirliliğini ve koordineli spamleri eler, yüksek değerli kritik gelişmeleri öne çıkarır.</p>
+          </div>
+          <div class="case-card-footer">
+            <span class="case-metric-pill">Gelişmiş Çok Dilli NLP Motoru</span>
+          </div>
+        </div>
+
+        <!-- 6. Betting Data & Probability -->
+        <div class="case-card">
+          <div class="case-card-header">
+            <div class="case-icon icon-purple">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+            </div>
+            <span class="case-domain-tag tag-purple">// BAHİS VERİSİ VE OLASILIK</span>
+          </div>
+          <div class="case-card-body">
+            <h3>Gerçek Zamanlı Olasılık ve Oran Analiz Sürüsü</h3>
+            <p>Çizgi anomalilerini ve arbitraj fırsatlarını tespit etmek için küresel bahis platformlarını, sakatlık bültenlerini, hakem atamalarını ve hava durumu modellerini 7/24 tarar.</p>
+          </div>
+          <div class="case-card-footer">
+            <span class="case-metric-pill">Dinamik Oran Akışı</span>
+          </div>
+        </div>
+
+        <!-- 7. Competitor Intelligence -->
+        <div class="case-card">
+          <div class="case-card-header">
+            <div class="case-icon icon-cobalt">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </div>
+            <span class="case-domain-tag tag-cobalt">// RAKİP İSTİHBARATI</span>
+          </div>
+          <div class="case-card-body">
+            <h3>Gizli Pazar Hamleleri ve Fiyat Takip Sürüsü</h3>
+            <p>Küresel pazarlarda rakiplerin mühendislik işe alım dalgalarını, gizli fiyat güncellemelerini, kurumsal müşteri duyurularını ve API değişikliklerini sessizce izler.</p>
+          </div>
+          <div class="case-card-footer">
+            <span class="case-metric-pill">Anlık DOM Değişim Uyarıları</span>
+          </div>
+        </div>
+
+        <!-- 8. Continuous Web Surveillance -->
+        <div class="case-card">
+          <div class="case-card-header">
+            <div class="case-icon icon-emerald">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+            </div>
+            <span class="case-domain-tag tag-emerald">// 7/24 ÇEVRESEL İZLEME</span>
+          </div>
+          <div class="case-card-body">
+            <h3>Derin Web ve Mevzuat Nöbetçisi</h3>
+            <p>Niş ticaret birliklerini, bölgesel resmi gazeteleri ve yabancı tedarik zincirlerini otomatik konsensüs doğrulamasıyla sürekli tarayan arka plan ajanları.</p>
+          </div>
+          <div class="case-card-footer">
+            <span class="case-metric-pill">Sıfır İnsan Müdahalesi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SLIDE 7 — THE 15-MINUTE LIVE CHALLENGE (THE ASK)
+       ================================================ -->
+  <section class="page page-cta" id="p-cta">
+    <div class="bg-grid"></div>
+    <div class="bg-ambient-glow glow-cobalt"></div>
+
+    <div class="page-inner page-cta-wrap">
+      <div class="cta-tag-row reveal">
+        <span class="badge-version">15 DAKİKALIK CANLI MEYDAN OKUMA</span>
+      </div>
+
+      <h2 class="cta-hero-title reveal reveal-delay-1">
+        Canlı Görün. Slayt Yok.<br>
+        <span class="grad-blue">En Zorlu Kullanım Senaryonuzla</span>
+      </h2>
+
+      <div class="cta-sub-box reveal reveal-delay-2">
+        <p>
+          Bize en karmaşık rakibinizi, pazardaki kör noktanızı veya yabancı dildeki veri kaynaklarınızı verin.
+          <strong>2 dakikadan kısa sürede canlı bir otonom ajan sürüsü yapılandırıp devreye alalım.</strong>
+        </p>
+      </div>
+
+      <div class="cta-actions-group reveal reveal-delay-3">
+        <a href="mailto:gokhan@bossint.ai?subject=Bossint AI — 15 Dakikalık Canlı Demo Talebi&body=Merhaba Gökhan,%0D%0A%0D%0ABossint AI tanıtımını inceledim ve 15 dakikalık canlı bir demo planlamak istiyorum.%0D%0A%0D%0AKullanım Alanı / Odak:%0D%0AŞirket / Kurum:%0D%0A" class="cta-button-primary">
+          <span>15 Dk Canlı Demo Planlayın</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+
+        <a href="mailto:gokhan@bossint.ai" class="cta-direct-email">
+          Kurucuya Doğrudan Erişim: gokhan@bossint.ai
+        </a>
+      </div>
+
+      <div class="cta-meta-row reveal reveal-delay-4">
+        <span>bossint.ai</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="teaser-04.js"></script>
+</body>
+</html>
