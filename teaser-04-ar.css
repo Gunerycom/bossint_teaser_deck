@@ -1,0 +1,125 @@
+/* =========================================================
+   BOSSINT AI — ARABIC VERSION (RTL & ARABIC TYPOGRAPHY)
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('teaser-04.css');
+
+/* ---------- ARABIC BASE & TYPOGRAPHY ---------- */
+html[dir="rtl"],
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Readex Pro', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: normal;
+}
+
+body[dir="rtl"] h1,
+body[dir="rtl"] h2,
+body[dir="rtl"] h3,
+body[dir="rtl"] h4,
+body[dir="rtl"] .hero-title,
+body[dir="rtl"] .headline {
+  font-family: 'Readex Pro', 'IBM Plex Sans Arabic', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+body[dir="rtl"] .mono,
+body[dir="rtl"] .tag-telemetry,
+body[dir="rtl"] .topbar-page-indicator,
+body[dir="rtl"] .hero-pill,
+body[dir="rtl"] .scroll-hint-bar,
+body[dir="rtl"] .stat-num,
+body[dir="rtl"] .cagr-badge-row,
+body[dir="rtl"] .stat-source-link,
+body[dir="rtl"] .insight-source,
+body[dir="rtl"] .insight-metric-hero,
+body[dir="rtl"] .pipeline-step-num,
+body[dir="rtl"] .pipeline-footer-banner,
+body[dir="rtl"] .case-domain-tag,
+body[dir="rtl"] .case-metric-pill,
+body[dir="rtl"] .badge-version,
+body[dir="rtl"] .dot-nav-item::before {
+  font-family: 'IBM Plex Sans Arabic', 'JetBrains Mono', monospace;
+}
+
+/* ---------- TOPBAR RTL ---------- */
+body[dir="rtl"] .topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+body[dir="rtl"] .topbar-logo-link.hide-on-cover {
+  transform: translateX(6px);
+}
+
+/* ---------- DOT NAVIGATION (LEFT SIDE FOR RTL) ---------- */
+body[dir="rtl"] .dot-nav {
+  right: auto;
+  left: 24px;
+}
+
+body[dir="rtl"] .dot-nav-item::before {
+  right: auto;
+  left: 20px;
+  transform: translateY(-50%) translateX(-4px);
+}
+
+body[dir="rtl"] .dot-nav-item:hover::before {
+  transform: translateY(-50%) translateX(0);
+}
+
+/* ---------- CALLOUTS & BORDERS RTL ---------- */
+body[dir="rtl"] .thesis-callout {
+  border-left: none;
+  border-right: 3px solid var(--cobalt);
+  border-radius: var(--r-sm) 0 0 var(--r-sm);
+}
+
+body[dir="rtl"] .stat-source-link {
+  text-align: left;
+}
+
+/* ---------- PIPELINE FLOW (RTL ARROWS & STEPS) ---------- */
+body[dir="rtl"] .pipeline-arrow svg {
+  transform: scaleX(-1);
+}
+
+body[dir="rtl"] .scroll-hint-bar svg {
+  margin-right: 4px;
+  margin-left: 0;
+}
+
+/* ---------- HERO SIGNALS & PILLS ---------- */
+body[dir="rtl"] .hero-pill {
+  gap: 10px;
+}
+
+body[dir="rtl"] .tag-telemetry {
+  gap: 10px;
+}
+
+/* ---------- CASE STUDIES RTL ---------- */
+body[dir="rtl"] .case-agent-list {
+  padding-right: 0;
+}
+
+body[dir="rtl"] .case-agent-bullet {
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+body[dir="rtl"] .case-live-tag svg {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+body[dir="rtl"] .cta-button-primary svg {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 900px) {
+  body[dir="rtl"] .dot-nav {
+    left: 14px;
+  }
+}
